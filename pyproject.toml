@@ -1,0 +1,16 @@
+[project]
+name = "nanocode-py"
+version = "0.1.0"
+description = "AI coding assistant"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+    "prompt-toolkit>=3.0.52",
+    "pydantic>=2.13.1",
+    "python-dotenv>=1.2.2",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+nanocode = "nanocode_py.__main__:main"
