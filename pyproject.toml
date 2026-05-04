@@ -1,5 +1,5 @@
 [project]
-name = "nanocode-py"
+name = "nanocode"
 version = "0.1.0"
 description = "Minimal AI coding assistant"
 readme = "README.md"
