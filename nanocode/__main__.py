@@ -4,14 +4,17 @@ from .config import AgentConfig
 from .agent import Agent
 from .cli import CLI
 
-async def main():
+async def _main():
     config = AgentConfig.load()
     agent = Agent(config)
     cli = CLI(agent)
     await cli.run()
 
-if __name__ == "__main__":
+def main():
     try:
-        asyncio.run(main())
+        asyncio.run(_main())
     except KeyboardInterrupt:
         sys.exit(0)
+
+if __name__ == "__main__":
+    main()
